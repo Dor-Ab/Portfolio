@@ -1,0 +1,28 @@
+.Layout {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10% 85% 5%;
+}
+
+.Layout>*:not(main) {
+    border: 1px solid;
+}
+
+.Layout>header,
+.Layout>footer,
+.Layout>main {
+    grid-column: span 6;
+}
+
+.Layout>header,
+.Layout>footer {
+    background-color: rgba(231, 205, 173, 0.995);
+
+}
+
+.Layout>main {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

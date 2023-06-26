@@ -1,0 +1,112 @@
+.Home {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.Home>.animatedTile>* {
+    transition: all 0.2s;
+    padding: 0.2rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.331);
+}
+
+.Home>.animatedTile>*:hover {
+    background-color: rgba(231, 205, 173, 0.995);
+    color: black;
+}
+
+.Home>.animatedTile:hover {
+    animation-play-state: paused;
+}
+
+.Home>.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+    animation: justHello alternate-reverse infinite 9s ease-in;
+}
+
+.Home>.greeting>h1 {
+    font-size: min(7vw, 8rem);
+}
+
+.Home>.whoAmI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    animation: floatingGreeting alternate-reverse infinite 10s ease-in-out;
+}
+
+.Home>.whoAmI>a {
+    text-decoration: none;
+    color: inherit;
+    font-size: min(2vw, 1rem);
+}
+
+.Home>.techs {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    grid-column: 3;
+    animation: floatingGreeting alternate infinite 8s ease-in-out;
+}
+
+.Home>.techs>a {
+    text-decoration: none;
+    color: inherit;
+    font-size: min(2vw, 1.5rem);
+}
+
+.Home>.contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    grid-column: 3;
+    animation: floatingGreeting alternate infinite 11s ease-in-out;
+}
+
+.Home>.contactMe>a {
+    text-decoration: none;
+    color: inherit;
+    font-size: min(1.5vw, 3rem);
+}
+
+.Home>.projects {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    animation: floatingGreeting alternate infinite 9s ease-in-out;
+}
+
+.Home>.projects>a {
+    text-decoration: none;
+    color: inherit;
+    font-size: min(2vw, 1.5rem);
+}
+
+@keyframes floatingGreeting {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-1rem) translateX(1rem);
+    }
+
+    100% {
+        transform: translateY(1rem) translateX(2rem);
+    }
+
+}
+
+@keyframes justHello {
+    to {
+        transform: translateY(-1rem);
+    }
+}
