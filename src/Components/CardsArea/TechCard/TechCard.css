@@ -1,0 +1,23 @@
+.TechCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min(10vw, 15rem);
+    min-width: 10rem;
+    color: black;
+    border-radius: 0.5rem;
+    color: inherit;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.331), rgba(255, 255, 255, 0.331), transparent, transparent)
+}
+
+.TechCard>img {
+    transition: all 0.2s;
+    transform: translateY(-3rem);
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.TechCard:hover>img {
+    transform: translateY(0);
+}

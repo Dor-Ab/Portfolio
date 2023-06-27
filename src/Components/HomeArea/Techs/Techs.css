@@ -1,0 +1,18 @@
+.Techs {
+    display: grid;
+    place-content: center;
+}
+
+.Techs>.techsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    animation: init 3s forwards;
+}
+
+.Techs>.row {
+    animation: init 0.5s forwards;
+}

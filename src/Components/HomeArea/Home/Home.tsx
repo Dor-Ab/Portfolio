@@ -43,7 +43,7 @@ function Home(): JSX.Element {
             </div>
 
             <div className="techs animatedTile">
-                <NavLink to={""}>Technologies</NavLink>
+                <NavLink to={"/technologies"}>Technologies</NavLink>
             </div>
 
             <div className="contactMe animatedTile">

@@ -3,6 +3,7 @@ import "./Routing.css";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import Home from "../../HomeArea/Home/Home";
 import WhoAmI from "../../HomeArea/WhoAmI/WhoAmI";
+import Techs from "../../HomeArea/Techs/Techs";
 
 function Routing(): JSX.Element {
     return (
@@ -10,6 +11,7 @@ function Routing(): JSX.Element {
             <Routes>
                 <Route path="/home" element={<Home />} />
                 <Route path="/who-am-i" element={<WhoAmI />} />
+                <Route path="/technologies" element={<Techs />} />
                 <Route path="/" element={<Home />} />
                 <Route path="*" element={<PageNotFound />} />
             </Routes>

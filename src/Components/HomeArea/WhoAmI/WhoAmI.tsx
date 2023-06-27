@@ -36,7 +36,7 @@ function WhoAmI(): JSX.Element {
             <Row>
                 <Col xs={3}></Col>
                 <Col>
-                    <p>I'm looking for a Fullstack Development position in a happy and friendly office.</p>
+                    <p>I'm looking for a Fullstack Development position in a happy and a friendly office.</p>
                 </Col>
                 <Col xs={3}></Col>
             </Row>

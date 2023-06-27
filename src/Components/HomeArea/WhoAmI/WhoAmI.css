@@ -1,3 +1,7 @@
+.WhoAmI {
+    animation: init 1s forwards;
+}
+
 .WhoAmI>.row>.myPhoto>img {
     width: min(70%, 20rem);
     min-width: 10rem;
