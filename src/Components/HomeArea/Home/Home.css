@@ -110,3 +110,21 @@
         transform: translateY(-1rem);
     }
 }
+
+.test {
+    animation: greetingFade 1s ease-in;
+}
+
+.test2 {
+    animation: greetingFade 1s ease-in reverse;
+}
+
+@keyframes greetingFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}

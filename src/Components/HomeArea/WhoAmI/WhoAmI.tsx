@@ -41,7 +41,12 @@ function WhoAmI(): JSX.Element {
                 <Col xs={3}></Col>
             </Row>
 
-            <NavLink className="techs" to={"/technologies"}>My Skills</NavLink>
+            <Row>
+                <Col className="btnsConatiner">
+                    <NavLink className="btns" to={"/technologies"}>My Skills</NavLink>
+                    <NavLink className="btns" to={"/home"}>Home</NavLink>
+                </Col>
+            </Row>
         </div>
     );
 }
