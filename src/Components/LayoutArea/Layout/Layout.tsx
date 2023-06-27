@@ -1,4 +1,3 @@
-import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Routing from "../Routing/Routing";
 import lightBg from "../../../Assets/Images/light-bg.jpg"
@@ -50,9 +49,6 @@ function Layout(): JSX.Element {
                 <Routing />
             </main>
 
-            <footer>
-                <Footer />
-            </footer>
         </div>
     );
 }

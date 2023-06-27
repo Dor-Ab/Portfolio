@@ -1,6 +1,30 @@
 .Header {
     height: 100%;
     padding-left: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+}
+
+.Header>h2 {
+    grid-column: 2;
+}
+
+.Header>.darkModeContainer {
+    padding-right: 1rem;
     display: flex;
     align-items: center;
+    justify-content: end;
+    grid-column: 3;
+}
+
+.Header>.darkModeContainer>button {
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0.331);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.Header>.darkModeContainer>button:hover {
+    background-color: rgba(255, 255, 255, 0.612);
 }
