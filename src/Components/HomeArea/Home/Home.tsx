@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 function Home(): JSX.Element {
 
     const [greeting, setGreeting] = useState<string>("Hello")
-    const [greetingAnimation, setGreetingAnimation] = useState<string>("test")
+    const [greetingAnimation, setGreetingAnimation] = useState<string>("fade")
 
     useEffect(() => {
         let counter = 0
-        const greetings = ["שלום", "Привет", "Bonjour", "مرحبًا", "Hello"]
+        const greetings = ["שלום", "Hola", "Привет", "Bonjour", "مرحبًا", "Hello"]
 
         const greetingInterval = setInterval(() => {
             setGreeting(greetings[counter])
@@ -18,16 +18,16 @@ function Home(): JSX.Element {
         }, 5000)
 
 
-        const test = setInterval(() => {
+        const fade = setInterval(() => {
             setGreetingAnimation("")
             setTimeout(() => {
-                setGreetingAnimation("test")
+                setGreetingAnimation("fade")
             }, 20)
         }, 4980)
 
         return () => {
             clearInterval(greetingInterval)
-            clearInterval(test)
+            clearInterval(fade)
         }
     }, [])
 

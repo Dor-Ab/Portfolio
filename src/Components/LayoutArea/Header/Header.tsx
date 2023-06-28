@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { DarkModeActionType, darkModeStore } from "../../../Redux/darkModeState";
 import "./Header.css";
+import logo from "../../../Assets/Logo/logo-no-background.png"
+import { NavLink } from "react-router-dom";
 
 function Header(): JSX.Element {
 
@@ -34,7 +36,9 @@ function Header(): JSX.Element {
 
     return (
         <div className="Header">
-            <h2>My CV</h2>
+            <NavLink to={"/home"}>
+                <img src={logo} />
+            </NavLink>
             <div className="darkModeContainer">
                 <button onClick={handleClick}>{darkMode}</button>
             </div>

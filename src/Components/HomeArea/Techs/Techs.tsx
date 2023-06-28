@@ -25,20 +25,20 @@ function Techs(): JSX.Element {
                 <h2>My Skills And Technologies:</h2>
             </Row>
             <div className="techsContainer">
-                <TechCard name="JavaScript" photo={jsImg} />
                 <TechCard name="HTML" photo={htmlImg} />
                 <TechCard name="CSS" photo={cssImg} />
-                <TechCard name="React" photo={reactImg} />
                 <TechCard name="Bootstrap" photo={bootstrapImg} />
+                <TechCard name="JavaScript" photo={jsImg} />
+                <TechCard name="TypeScript" photo={tsImg} />
+                <TechCard name="OOP" photo={oopImg} />
+                <TechCard name="React" photo={reactImg} />
+                <TechCard name="Node.js" photo={nodeImg} />
                 <TechCard name="Express.js" photo={expressImg} />
-                <TechCard name="FireBase" photo={fireBaseImg} />
                 <TechCard name="Git" photo={gitImg} />
                 <TechCard name="GitHub" photo={gitHubImg} />
-                <TechCard name="MongoDb" photo={mongoImg} />
                 <TechCard name="MySQL" photo={sqlImg} />
-                <TechCard name="Node.js" photo={nodeImg} />
-                <TechCard name="OOP" photo={oopImg} />
-                <TechCard name="TypeScript" photo={tsImg} />
+                <TechCard name="MongoDb" photo={mongoImg} />
+                <TechCard name="FireBase" photo={fireBaseImg} />
                 <TechCard name="jQuery" photo={jqueryImg} />
                 <TechCard name="PHP" photo={phpImg} />
             </div>

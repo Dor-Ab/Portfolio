@@ -4,6 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     animation: init 1s forwards;
+    overflow: hidden;
 }
 
 .Home>.animatedTile>* {
@@ -34,6 +35,8 @@
 
 .Home>.greeting>h1 {
     font-size: min(7vw, 8rem);
+    font-family: 'Cookie', cursive;
+    filter: drop-shadow(4px 4px 5px orange);
 }
 
 .Home>.whoAmI {
@@ -91,6 +94,10 @@
     font-size: min(2vw, 1.5rem);
 }
 
+.fade {
+    animation: greetingFade 1s ease-in forwards;
+}
+
 @keyframes floatingGreeting {
     0% {
         transform: translateY(0) translateX(0);
@@ -112,13 +119,6 @@
     }
 }
 
-.test {
-    animation: greetingFade 1s ease-in;
-}
-
-.test2 {
-    animation: greetingFade 1s ease-in reverse;
-}
 
 @keyframes greetingFade {
     from {

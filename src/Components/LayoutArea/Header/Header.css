@@ -6,8 +6,24 @@
     place-content: center;
 }
 
-.Header>h2 {
+/* .Header>h2 {
     grid-column: 2;
+} */
+
+.Header>a {
+    grid-column: 1;
+    justify-self: self-start;
+    padding-left: 4rem;
+}
+
+.Header>a>img {
+    transition: all 0.2s;
+    width: min(9vw, 7rem);
+    filter: invert() drop-shadow(0px 7px 3px #252525);
+}
+
+.Header>a>img:hover {
+    transform: scale(1.1);
 }
 
 .Header>.darkModeContainer {
