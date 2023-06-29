@@ -1,17 +1,41 @@
 .ContactCard {
+    transition: all 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: min(10vw, 15rem);
-    min-width: 10rem;
+    width: min(16vw, 16rem);
+    min-width: 13rem;
     color: black;
-    border-radius: 0.5rem;
-    color: inherit;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 1rem;
+}
+
+.ContactCard>.row>h5 {
+    white-space: nowrap;
+    padding-top: 0.5rem;
 }
 
 .ContactCard>img {
     transition: all 0.2s;
     width: 100%;
     border-radius: 0.5rem;
+
+}
+
+.ContactCard>a {
+    transition: all 0.2s;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    color: white;
+}
+
+.ContactCard>a.disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: grey;
 }

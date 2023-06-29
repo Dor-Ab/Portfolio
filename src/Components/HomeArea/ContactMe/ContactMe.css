@@ -1,1 +1,14 @@
-.ContactMe {}
+.ContactMe {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.ContactMe>.ContactCard:hover {
+    background-color: antiquewhite;
+    transform: scale(1.1);
+    box-shadow: 1px 0px 23px 7px #ffffff;
+}
