@@ -12,7 +12,7 @@
     border-radius: 1rem;
     background-color: white;
     padding: 1rem;
-    animation: i    nit 1s forwards;
+    animation: init 1s forwards;
 }
 
 .ProjectCard>.row>h3 {
