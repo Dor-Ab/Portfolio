@@ -1,0 +1,52 @@
+.ProjectCard {
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min(18vw, 16rem);
+    min-width: 13rem;
+    height: max(13vw, 23rem);
+    max-height: 25rem;
+    color: black;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 1rem;
+    animation: i    nit 1s forwards;
+}
+
+.ProjectCard>.row>h3 {
+    padding-top: 0.5rem;
+}
+
+.ProjectCard>img {
+    transition: all 0.2s;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.ProjectCard>.ProjectCardBtns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.ProjectCard>.ProjectCardBtns>a {
+    transition: all 0.2s;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    color: black;
+    background-color: #e7cdad;
+}
+
+.ProjectCard:hover>.ProjectCardBtns>a {
+    background-color: white;
+}
+
+.ProjectCard>.ProjectCardBtns>a:hover {
+    background-color: black;
+    color: white;
+}

@@ -5,13 +5,14 @@
     gap: 3rem;
     overflow-y: auto;
     overflow-x: hidden;
+    animation: init 1s forwards;
 }
 
 .ContactMe>.row {
     margin-top: 1rem;
 }
 
-.ContactMe>.cardsContainer {
+.ContactMe>.contactMeCardsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -40,7 +41,7 @@
     background-color: rgba(218, 218, 218, 0.331);
 }
 
-.ContactMe>.cardsContainer>.ContactCard:hover {
+.ContactMe>.contactMeCardsContainer>.ContactCard:hover {
     background-color: antiquewhite;
     transform: scale(1.1);
     box-shadow: 1px 0px 23px 7px #ffffff;

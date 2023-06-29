@@ -20,7 +20,7 @@ function ContactMe(): JSX.Element {
                 <Col xs="3">
                 </Col>
             </Row>
-            <div className="cardsContainer">
+            <div className="contactMeCardsContainer">
                 <ContactCard name="Facebook" image={fbImage} description="Feel free to reach me out on Facebook!" url="https://m.me/APerfectHunk" bgColor="#4b77cf" btnContent="Messanger Chat" />
                 <ContactCard name="WhatsApp" image={wsImage} description="Feel free to reach me out on Whatsapp!" url="https://wa.me/972527727614" bgColor="#009633" btnContent="WhatsApp Chat" />
                 <ContactCard name="LinkedIn" image={liImage} description="Feel free to reach me out on LinkedIn!" url="https://www.linkedin.com/in/dor-abutbul" bgColor="#4b77cf" btnContent="LinkdIn Chat" />
