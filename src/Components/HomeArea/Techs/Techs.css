@@ -14,5 +14,27 @@
 }
 
 .Techs>.row {
+    margin-top: 1rem;
     animation: init 0.5s forwards;
+}
+
+.Techs>.row>.btnsContainer {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.Techs>.row>.btnsContainer>.btns {
+    transition: all 0.2s;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.331);
+}
+
+.Techs>.row>.btnsContainer>.btns:hover {
+    font-size: large;
+    background-color: rgba(218, 218, 218, 0.331);
 }

@@ -19,6 +19,7 @@
 .Header>a>img {
     transition: all 0.2s;
     width: min(9vw, 7rem);
+    min-width: 5rem;
     filter: invert() drop-shadow(0px 7px 3px #252525);
 }
 

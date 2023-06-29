@@ -15,15 +15,23 @@ import nodeImg from "../../../Assets/Images/Node.png"
 import oopImg from "../../../Assets/Images/OOP.png"
 import tsImg from "../../../Assets/Images/TypeScript.png"
 import jqueryImg from "../../../Assets/Images/jQuery.png"
-import phpImg from "../../../Assets/Images/php.png"
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 function Techs(): JSX.Element {
     return (
         <div className="Techs">
             <Row>
-                <h2>My Skills And Technologies:</h2>
+                <Col xs="3" className="btnsContainer">
+                    <NavLink className="btns" to={"/home"}>Home</NavLink>
+                </Col>
+                <Col>
+                    <h2>My Skills And Technologies:</h2>
+                </Col>
+                <Col xs="3">
+                </Col>
             </Row>
+
             <div className="techsContainer">
                 <TechCard name="HTML" photo={htmlImg} />
                 <TechCard name="CSS" photo={cssImg} />
@@ -40,7 +48,6 @@ function Techs(): JSX.Element {
                 <TechCard name="MongoDb" photo={mongoImg} />
                 <TechCard name="FireBase" photo={fireBaseImg} />
                 <TechCard name="jQuery" photo={jqueryImg} />
-                <TechCard name="PHP" photo={phpImg} />
             </div>
         </div>
     );

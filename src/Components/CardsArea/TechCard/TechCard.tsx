@@ -10,7 +10,7 @@ function TechCard(props: TechCardProps): JSX.Element {
     return (
         <div className="TechCard">
             <Row>
-                <h2>{props.name}</h2>
+                <h3>{props.name}</h3>
             </Row>
             <img src={props.photo} alt="" />
         </div>

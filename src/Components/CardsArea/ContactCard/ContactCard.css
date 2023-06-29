@@ -1,0 +1,17 @@
+.ContactCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min(10vw, 15rem);
+    min-width: 10rem;
+    color: black;
+    border-radius: 0.5rem;
+    color: inherit;
+}
+
+.ContactCard>img {
+    transition: all 0.2s;
+    width: 100%;
+    border-radius: 0.5rem;
+}
