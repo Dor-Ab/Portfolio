@@ -24,7 +24,7 @@ function ContactCard(props: ContactCardProps): JSX.Element {
                 setBgColor("grey")
             }
         }
-        
+
     }, [])
 
     const [disabled, setDisabled] = useState<string>("")
