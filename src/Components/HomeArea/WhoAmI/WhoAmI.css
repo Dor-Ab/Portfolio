@@ -1,5 +1,8 @@
 .WhoAmI {
+    height: 100%;
     animation: init 1s forwards;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .WhoAmI>.row>.myPhoto>img {
